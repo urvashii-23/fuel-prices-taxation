@@ -1,28 +1,22 @@
 # Global Fuel Prices and Taxation Trends
 
 ## Objective
-This project studies global fuel prices and taxation trends using public data.
+Analyse how fuel prices differ across countries and how taxation relates to them, using Tableau.
 
-## Questions
-1. How different are petrol prices in different countries?
-2. How much of the petrol price is tax?
-3. How did governments change taxes when oil prices went up in 2026?
+## Dataset
+global_fuel_prices_Dataset.csv has weekly data from 2020 for 84 countries, with 27,468 rows and 13 fields. Fields include country, region, income level, subsidy level, petrol, diesel and LPG prices in USD per litre, Brent crude price, and tax percentage.
 
-## Data
-Fuel prices for EU countries, 12 October 2026. Source: fuel-prices.eu, which publishes the European Commission Weekly Oil Bulletin.
+## Tableau Workbook
+fuel-prices-dashboard.twb contains:
+- Average petrol price by country (Top 10 filter)
+- Average diesel price by country (Top 10 filter)
+- Diesel minus petrol price gap by country (calculated field: Fuel Price Gap)
+- A dashboard combining all three charts
+- A story, Fuel Prices Story, with three scenes
 
-## Method
-I saved the data as a CSV file and used Python (pandas and matplotlib) to read it and draw a bar chart of petrol prices.
+## Key Findings
+- Hong Kong has the highest average petrol and diesel prices in the dataset.
+- Countries like Venezuela, Iran and Libya sit near the cheap end, consistent with heavy fuel subsidies.
 
-## Result
-Malta has the cheapest petrol at 1.340 euro per litre and Denmark the most expensive at 2.658 euro per litre. The EU average is 2.010 euro per litre.
-
-## How to run
-pip install pandas matplotlib
-python src/analysis.py
-
-## Limits
-This is a small snapshot from one date, so it shows prices only, not trends over time.
-
-## Next steps
-Add more countries, tax share data and price history.
+## Tools
+Tableau, Python (pandas, matplotlib), GitHub.
