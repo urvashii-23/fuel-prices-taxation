@@ -19,4 +19,4 @@ fuel-prices-dashboard.twb contains:
 - Countries like Venezuela, Iran and Libya sit near the cheap end, consistent with heavy fuel subsidies.
 
 ## Tools
-Tableau, Python (pandas, matplotlib), GitHub.
+Tableau, GitHub.
