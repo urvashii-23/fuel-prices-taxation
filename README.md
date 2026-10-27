@@ -15,7 +15,7 @@ fuel-prices-dashboard.twb contains:
 - A story, Fuel Prices Story, with three scenes
 
 ## Key Findings
-- Hong Kong has the highest average petrol and diesel prices in the dataset.
+- Hong Kong has the highest average petrol and Netherlands has the highest average diesel prices
 - Countries like Venezuela, Iran and Libya sit near the cheap end, consistent with heavy fuel subsidies.
 
 ## Tools
