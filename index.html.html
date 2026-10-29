@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Fuel Prices & Taxation Trends | Tableau Project</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+        body{background:#f1f5f9;color:#0f172a}
+        header{background:linear-gradient(135deg,#0f172a,#1d4ed8);color:white;padding:60px 20px;text-align:center}
+        header h1{font-size:2.6rem} header p{max-width:800px;margin:12px auto;opacity:0.9}
+        nav{background:white;position:sticky;top:0;z-index:10;display:flex;justify-content:center;gap:20px;padding:15px;box-shadow:0 2px 10px rgba(0,0,0,0.08)}
+        nav a{color:#1d4ed8;text-decoration:none;font-weight:700}
+        .container{max-width:1200px;margin:auto;padding:25px 15px}
+        .card{background:white;border-radius:16px;padding:25px;box-shadow:0 8px 25px rgba(0,0,0,0.06);margin-bottom:25px}
+        h2{border-left:5px solid #3b82f6;padding-left:12px;margin-bottom:12px}
+        .tableau-box{width:100%;height:800px;border:2px solid #e2e8f0;border-radius:12px;overflow:hidden;background:#fff;display:flex;align-items:center;justify-content:center}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+        .kpi{font-size:2rem;font-weight:800;color:#1d4ed8}
+        .btn{background:#2563eb;color:white;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block}
+        footer{background:#0f172a;color:#94a3b8;text-align:center;padding:25px;margin-top:30px}
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Global Fuel Prices & Taxation Trends</h1>
+    <p>An Interactive Data Analysis Project using Tableau - Visualizing Crude Oil Prices, Tax Structures, and Global Retail Price Variations.</p>
+    <a href="#dashboard" class="btn">View Live Tableau Dashboard</a>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#dashboard">Tableau Dashboard</a>
+    <a href="#insights">Key Insights</a>
+    <a href="#data">Data Source</a>
+</nav>
+
+<div class="container">
+
+    <div class="grid">
+        <div class="card"><div class="kpi">6 Countries</div><p>Compared: India, USA, UK, Germany, UAE, Japan</p></div>
+        <div class="card"><div class="kpi">54% Avg. Tax</div><p>Tax contributes more than half of final fuel price globally</p></div>
+        <div class="card"><div class="kpi">Tableau Public</div><p>Dashboard Created & Published on Tableau</p></div>
+    </div>
+
+    <div class="card" id="about">
+        <h2>About The Project</h2>
+        <p>This project analyzes <b>why petrol price is different in every country</b> even though crude oil is same globally. Using Tableau, we visualized:</p>
+        <ul style="margin:15px 0 0 20px">
+            <li>Global Crude Oil Price Trend (2020-2026)</li>
+            <li>Country-wise Retail Price Comparison</li>
+            <li>Tax Share % vs Base Price</li>
+            <li>Three Taxation Models: High Tax, Subsidy, and De-regulated</li>
+        </ul>
+    </div>
+
+    <div class="card" id="dashboard">
+        <h2>Live Tableau Dashboard</h2>
+        <p style="margin-bottom:15px">This is your original Tableau work embedded in the website. Replace the link below with your Tableau Public link.</p>
+        
+        <!-- ============ PASTE YOUR TABLEAU LINK HERE ============ -->
+        <div class="tableau-box">
+            <div class='tableauPlaceholder' id='viz' style='width:100%; height:100%;'>
+                <!-- 
+                HOW TO GET THIS CODE:
+                1. Publish your workbook to Tableau Public
+                2. Click Share > Copy Embed Code
+                3. Paste it here replacing everything inside this div
+                
+                TEMPORARY SAMPLE EMBED (Replace with yours):
+                -->
+                <iframe 
+                    src="https://public.tableau.com/views/GlobalFuelPricesSample/FuelDashboard?:showVizHome=no&:embed=true"
+                    width="100%" 
+                    height="100%" 
+                    frameborder="0"
+                    style="border:0;">
+                </iframe>
+
+                <!-- YOUR ACTUAL EMBED SHOULD LOOK LIKE THIS:
+                <div class='tableauPlaceholder' ...>
+                    <object class='tableauViz'>... your Tableau code ...</object>
+                </div>
+                -->
+            </div>
+        </div>
+        
+        <p style="margin-top:15px; color:#64748b; font-size:0.9rem">
+            If dashboard does not load, open directly: <a href="https://public.tableau.com/app/discover" target="_blank">View on Tableau Public</a>
+        </p>
+    </div>
+
+    <div class="grid" id="insights">
+        <div class="card">
+            <h2>Key Insights from Tableau</h2>
+            <p><b>1. Tax is the Decider:</b> UK price $1.92 vs USA $0.95 - same crude, different tax.</p><br>
+            <p><b>2. Europe = High Tax:</b> 60% price is tax for carbon control & govt revenue.</p><br>
+            <p><b>3. Middle East = Subsidy:</b> UAE & Iran keep prices low by paying from govt budget.</p>
+        </div>
+        <div class="card">
+            <h2>Project Details</h2>
+            <p><b>Tool Used:</b> Tableau Desktop + Tableau Public</p>
+            <p><b>Dataset:</b> globalpetrolprices.com, IEA, World Bank</p>
+            <p><b>Visuals:</b> Line Chart (Trend), Map (Country Price), Bar Chart (Tax %), Donut (Breakdown)</p>
+            <br>
+            <a href="https://public.tableau.com/" target="_blank" class="btn">My Tableau Public Profile</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>Global Fuel Prices & Taxation Trends | Tableau Project | 2026</p>
+    <p>Website + Tableau Dashboard Integrated</p>
+</footer>
+
+</body>
+</html>
